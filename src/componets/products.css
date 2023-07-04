@@ -1,0 +1,87 @@
+.products-page {
+  padding: 0 40px 40px 40px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+  margin-top: 20px;
+}
+.all-products {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.product-detail {
+  margin: 20px;
+  border-radius: 20px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  background-color: rgb(232, 232, 232);
+  width: 250px;
+  height: 250px;
+}
+.product-detail img {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.product-detail .title {
+  font-size: 15px;
+}
+.product-detail .descri {
+  font-size: 15px;
+}
+.product-detail .category {
+  color: rgb(87, 87, 87);
+  font-size: 15px;
+}
+.product-detail .price {
+  font-size: 18px;
+}
+.cart {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 100px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-field {
+  outline: none;
+  padding: 10px 10px 10px 20px;
+  border-radius: 30px;
+  width: 80%;
+}
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .all-products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .all-products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .all-products {
+    grid-template-columns: 1fr;
+  }
+}
