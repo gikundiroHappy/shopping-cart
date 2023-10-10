@@ -81,6 +81,9 @@
   }
 }
 @media screen and (max-width: 550px) {
+  .search-field{
+    width:100%
+  }
   .all-products {
     grid-template-columns: 1fr;
   }
