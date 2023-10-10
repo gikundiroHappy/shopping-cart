@@ -81,6 +81,11 @@
   }
 }
 @media screen and (max-width: 550px) {
+  .nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
   .search-field{
     width:100%
   }
